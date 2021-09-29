@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+/* For Monochromatic Color Palette
+  :root{
+      --hue: 270;
+      --main-color: hsl(var(--hue), 75%, 50%);
+      --light-color: hsl(var(--hue), 75%, 80%);
+      --dark-color: hsl(var(--hue), 75%, 20%);
+  }
+*/
+
+:root{
+    --hue: 35;
+    --hue2: calc(var(--hue) - 120);
+    --hue3: calc(var(--hue) + 120);
+
+    --main-color: hsl(var(--hue), 75%, 50%);
+    --light-color: hsl(var(--hue2), 75%, 50%);
+    --dark-color: hsl(var(--hue3), 75%, 50%);
+}
+  html, body{
+    height: 100%;
+    background: #ccc;
+  }
+
+  header{
+      height: 20%;
+      background: var(--main-color);
+      box-shadow: 12px 0 0 12px var(--light-color);
+      position: relative;
+      z-index: 1;
+  }
+
+  main{
+      width: 80%;
+      height: 60%;
+      margin: 0 auto;
+      background: white;
+  }
+  
+  footer{
+      height: 20%;
+      background: var(--dark-color);
+  }
